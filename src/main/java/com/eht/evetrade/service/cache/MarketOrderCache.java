@@ -65,6 +65,8 @@ public class MarketOrderCache {
         return retList;
     }
 
+
+
     @Cacheable(value = "MoniTypeIdPrice")
     public List<String> getMoniTypeIdList() {
         List<String> retList = new LinkedList();

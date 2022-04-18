@@ -16,3 +16,10 @@ spring:
       settings:
         web-allow-others: true
         web-admin-password: dbpass
+  freemarker:
+    enable: true
+    suffix: .ftl
+    content-type: text/html
+    charset: UTF-8
+    cache: false
+    template-loader-path: classpath:/templates/
