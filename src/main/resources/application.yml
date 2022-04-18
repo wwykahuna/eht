@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: true
+      datasource:
+        master:
+          url: jdbc:h2:~/test
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /dbh2
+      settings:
+        web-allow-others: true
+        web-admin-password: dbpass
